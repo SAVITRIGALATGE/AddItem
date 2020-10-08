@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>UI Designe</title>
+    <meta charset="utf-8">
+    <style>
+            .split {
+                height: 125%; 
+                z-index: 1;
+                overflow-x: hidden;
+                padding-top: 20px;
+                float: left;
+                background-color: #f1f1f199;
+                width: 72%;
+                margin-top: 19px;
+                margin-left: -100px;
+            }
+            header {
+                background-color: #6666664f;
+                padding: 26px;
+                text-align: center;
+                font-size: 12px;
+                color: #666666;
+            }
+            article {
+                float: right;
+                padding: 20px;
+                width: 25%;
+                background-color: #f1f1f199;
+                height: 473px;
+                margin-top: -91px;
+                margin-top: 19px;
+            }
+            html, body { height:100%; margin:0; padding:0 }
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: gray;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #f1f1f1;;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 30px;
+  width: 89%;
+  height: 382px;
+}
+.R{
+    background-color:#6666661f;
+}
+.btn{
+    left: 26px; 
+    background-color: #008000cc;
+    color: white;
+    font-size: 15px;
+    margin-top: 32px;
+    float: left;
+}
+.btn1{
+    float: right;
+    margin-top: 25px;
+    color: #1b8580;
+    border-color: #1b8580;
+    font-size: 21px;
+    border-radius: 6px;
+}
+.tab,.tab th, .tab td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+.tab th, .tab td {
+  padding: 5px;
+  text-align: left;
+}
+.btnn{
+    background-color: #008000cc;
+    color: white;
+    font-size: 15px;
+    margin-top: -35px;
+
+}
+.phto{
+    height: 176px;
+    border: 1px solid #8080800d;
+    padding: 9px;
+    background-color: #f1f1f1;
+    margin-top: 35px;
+}
+.itemName{
+    height: 10px; 
+    font-size: 20px;
+}
+.pricename{
+    font-size: 20px;
+}
+.acutualprice{
+    float: left;
+    text-decoration-line: line-through;
+}
+.discountprice{
+    margin-left: -80px;
+}
+
+           
+    </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <h2 style="float: left;">All Iteams</h2>
+                    <button class="btnn" id="itemadded">Iteam added to cart</button>
+              </header>
+            <section>
+                <div class="split left">
+                    <div class="grid-container flex-container" id="mainItem"> 
+                        <!-- <div class="grid-item"  id="item"> -->
+                            <!-- <button type="button" class="btn">12% off</button>
+                            <img src="https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90"" style="width: 130px;
+                            height: 176px;
+                            border: 1px solid #8080800d;
+                            padding: 9px;
+                            background-color: #f1f1f1;
+                            margin-top: 35px;">
+                            <div class="R">
+                            <p style="height: 10px; font-size: 20px;">Item1</p>
+                            <p style="font-size: 20px;"><span style="text-decoration-line: line-through; ">$200</span>&nbsp; $180 
+                                <button type="button" class="btn1">Add to cart</button>
+                            </p>
+                            </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="grid-item">
+                            <button type="button" class="btn">12% off</button>
+                            <img src="https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90"" style="width: 130px;
+                            height: 176px;
+                            border: 1px solid #8080800d;
+                            padding: 9px;
+                            background-color: #f1f1f1;
+                            margin-top: 35px;">
+                            <div class="R">
+                            <p style="height: 10px; font-size: 20px;">Item1</p>
+                            <p style="font-size: 20px;"><span style="text-decoration-line: line-through; ">$200</span>&nbsp; $180 
+                                <button type="button" class="btn1">Add to cart</button>
+                            </p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="grid-item">
+                            <button type="button" class="btn">12% off</button>
+                            <img src="https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90"" style="width: 130px;
+                            height: 176px;
+                            border: 1px solid #8080800d;
+                            padding: 9px;
+                            background-color: #f1f1f1;
+                            margin-top: 35px;">
+                            <div class="R">
+                            <p style="height: 10px; font-size: 20px;">Item1</p>
+                            <p style="font-size: 20px;"><span style="text-decoration-line: line-through; ">$200</span>&nbsp; $180 
+                                <button type="button" class="btn1">Add to cart</button>
+                            </p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="grid-item">
+                            <button type="button" class="btn">12% off</button>
+                            <img src="https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90"" style="width: 130px;
+                            height: 176px;
+                            border: 1px solid #8080800d;
+                            padding: 9px;
+                            background-color: #f1f1f1;
+                            margin-top: 35px;">
+                            <div class="R">
+                            <p style="height: 10px; font-size: 20px;">Item1</p>
+                            <p style="font-size: 20px;"><span style="text-decoration-line: line-through; ">$200</span>&nbsp; $180 
+                                <button type="button" class="btn1">Add to cart</button>
+                            </p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="grid-item">
+                            <button type="button" class="btn">12% off</button>
+                            <img src="https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90" style="width: 130px;
+                            height: 176px;
+                            border: 1px solid #8080800d;
+                            padding: 9px;
+                            background-color: #f1f1f1;
+                            margin-top: 35px;">
+                            <div class="R">
+                            <p style="height: 10px; font-size: 20px;">Item1</p>
+                            <p style="font-size: 20px;"><span style="text-decoration-line: line-through; ">$200</span>&nbsp; $180 
+                                <button type="button" class="btn1">Add to cart</button>
+                            </p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="grid-item">
+                            <button type="button" class="btn">12% off</button>
+                            <img src="https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90" style="width: 130px;
+                            height: 176px;
+                            border: 1px solid #8080800d;
+                            padding: 9px;
+                            background-color: #f1f1f1;
+                            margin-top: 35px;">
+                            <div class="R">
+                            <p style="height: 10px; font-size: 20px;">Item1</p>
+                            <p style="font-size: 20px;"><span style="text-decoration-line: line-through; ">$200</span>&nbsp; $180 
+                                <button type="button" class="btn1">Add to cart</button>
+                            </p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+               
+    
+                
+            </section>
+            <article>
+                <h1>TAble</h1>
+                <table class="tab" id="tab1" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Item   1</td>
+                                <td>   -   4   + </td>
+                                <td>   $720  </td>
+                            </tr>
+                            <tr>
+                                <td>Item   1</td>
+                                <td>   -   2   + </td>
+                                <td>   $360  </td>
+                            </tr>
+                        </tbody>
+                    </thead>
+                </table>
+                <br/><br/>
+                <table style="width: 100%; border: 1px solid #8080809e;">
+                    <thead>
+                        <tr>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                        <tbody  id="tab2">
+                             <tr>
+                                <td>actual</td>
+                                <td id="actu">: </td>
+                            </tr>
+                           <tr>
+                                <td>Discount</td>
+                                <td id="disc">:  </td>
+                            </tr>
+                            
+                            <tr style="background-color: #80808040;">
+                                <td>Order Total</td>
+                                <td id="OrdToatal">: $ </td>
+                            </tr>
+                        </tbody> 
+                    </thead>
+                </table>
+            </article>
+        </div>
+        
+
+
+        <script>
+           
+
+    
+   
+
+     var  items=[
+        {
+                        name: "Samsung Series 4",
+                        image: "https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90",
+                        price: {
+                            actual: 13999,
+                            display: 22500
+            },
+                        discount: 37
+        },
+        {
+                        name: "Samsung Super 6",
+                        image: "https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90",
+                        price: {
+                            actual: 35999,
+                            display: 66900
+            },
+                        discount: 46
+        },
+        {
+                        name: "Samsung The Frame",
+                        image: "https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90",
+                        price: {
+                            actual: 84999,
+                            display: 133900
+            },
+                        discount: 36
+        },
+        {
+                        name: "Thomson B9 Pro",
+                        image: "https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90",
+                        price: {
+                            actual: 9999,
+                            display: 16999
+            },
+                        discount: 41
+        },
+        {
+                        name: "LG Ultra HD",
+                        image: "https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90",
+                        price: {
+                            actual: 39990,
+                            display: 79990
+            },
+                        discount: 50
+        },
+        {
+                        name: "Vu Ready LED TV",
+                        image: "https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90",
+                        price: {
+                            actual: 7999,
+                            display: 17e3
+            },
+                        discount: 52
+        },
+        {
+                        name: "Koryo Android TV",
+                        image: "https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90",
+                        price: {
+                            actual: 55999,
+                            display: 199990
+            },
+                        discount: 71
+        },
+        {
+                        name: "Micromax LED Smart",
+                        image: "https://rukminim1.flixcart.com/image/670/600/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h83fuzbksz.jpeg?q=90",
+                        price: {
+                            actual: 9999,
+                            display: 27990
+                         },
+                        discount: 64
+        }
+    ]
+
+
+let div;
+
+ let elementId=document.getElementById('mainItem');
+ items.forEach(element => {
+     
+     div=document.createElement('div')
+     div.classList.add('grid-item')
+     let btn=document.createElement('button')
+     btn.classList.add('btn')
+     let phto=document.createElement('img')
+     phto.classList.add('phto')
+     phto.setAttribute('src',element.image)
+     let div1=document.createElement('div')
+     div1.classList.add('R')
+     let p1=document.createElement('p')
+     p1.classList.add('itemName')
+     let text1=document.createTextNode(element.name)
+     p1.appendChild(text1)
+     div1.appendChild(p1)
+     let p2=document.createElement('p')
+     p2.classList.add('pricename')
+     div1.appendChild(p2)
+     let span1=document.createElement('span')
+     span1.classList.add('acutualprice')
+     p2.appendChild(span1)
+     let text3=document.createTextNode(element.price.display)
+     span1.appendChild(text3)
+     let span2=document.createElement('span')
+     span2.classList.add('discountprice')
+     p2.appendChild(span2)
+     let text4=document.createTextNode(element.price.actual)
+     span2.appendChild(text4)
+     let btn1=document.createElement('button')
+     btn1.addEventListener('click',AddCart.bind(this,element))
+     btn1.classList.add('btn1')
+     p2.appendChild(btn1)
+     let text5=document.createTextNode('Add_To_Cart')
+     btn1.appendChild(text5)
+     let text =document.createTextNode(element.discount+'%off')
+     btn.appendChild(text)
+     div.appendChild(btn)
+     div.appendChild(phto)
+     div.appendChild(div1)
+     elementId.appendChild(div)
+
+ });
+let count=0;
+let TotalPrice=[];
+let acutualprc=0;
+let totalDiscount=0;
+ function AddCart(event,data){
+     let itemadded=document.getElementById("itemadded")
+     count++;
+     TotalPrice.push(event)
+     TotalPrice.forEach(e=>{
+        acutualprc += e.price.actual;
+        totalDiscount += e.discount;
+     })
+     document.getElementById('actu').innerHTML=acutualprc;
+     document.getElementById('disc').innerHTML=totalDiscount;
+     document.getElementById('OrdToatal').innerHTML=acutualprc - totalDiscount;
+
+     console.log(TotalPrice)
+     itemadded.innerHTML="item " +count + " added to cart";
+    console.log("event",event)
+    console.log("data",data)
+ }
+
+ 
+
+
+ 
+   
+    
+        
+        
+    
+        </script>
+    </body>
+    
+</html>
